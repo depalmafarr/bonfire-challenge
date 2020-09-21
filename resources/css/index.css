@@ -2,14 +2,15 @@ html, body {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: lightgrey; }
+  background-color: whitesmoke; }
 
 #topContainer {
   width: auto;
   height: 35vh;
   position: relative;
   text-align: center;
-  color: white; }
+  color: white;
+  padding-bottom: auto; }
 
 /* Top left text */
 .top-left {
@@ -50,67 +51,132 @@ html, body {
 
 #lowerContainer {
   display: grid;
-  grid-gap: 5rem;
-  grid-template-columns: 200px 200px; }
+  justify-content: center;
+  grid-gap: 2rem;
+  grid-template-columns: 200px 200px 200px;
+  text-align: center;
+  align-items: center;
+  margin: auto; }
 
 .box1 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
   box-sizing: border-box;
   width: 200px;
-  height: 130px;
+  height: 180px;
   margin: 5px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: white; }
+
+.box1 h3 {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  color: silver; }
 
 .box2 {
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
   box-sizing: border-box;
   width: 200px;
-  height: 130px;
+  height: 180px;
   margin: 5px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: white; }
+
+.box2 h3 {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  color: silver; }
 
 .box3 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
   box-sizing: border-box;
   width: 200px;
-  height: 130px;
+  height: 180px;
   margin: 5px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: white; }
+
+.box3 h3 {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  color: silver; }
 
 .box4 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
   box-sizing: border-box;
   width: 200px;
-  height: 130px;
+  height: 180px;
   margin: 5px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: white; }
+
+.box4 h3 {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  color: silver; }
 
 .box5 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
   box-sizing: border-box;
   width: 200px;
-  height: 130px;
+  height: 180px;
   margin: 5px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: white; }
+
+.box5 h3 {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  color: silver; }
 
 .box6 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: blue;
   box-sizing: border-box;
   width: 200px;
-  height: 130px;
+  height: 180px;
   margin: 5px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: white; }
+
+.box6 h3 {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  color: silver; }
+
+.btn-group {
+  margin-bottom: 50px; }
+
+.btn-group button {
+  background-color: dimgray;
+  /* Green background */
+  border: 0px solid black;
+  /* Green border */
+  color: white;
+  /* White text */
+  padding: 10px 24px;
+  /* Some padding */
+  cursor: pointer;
+  /* Pointer/hand icon */
+  float: left;
+  /* Float the buttons side by side */ }
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+  /* Prevent double borders */ }
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41; }
 
 /*# sourceMappingURL=index.css.map */
