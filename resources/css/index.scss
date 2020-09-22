@@ -5,7 +5,7 @@ html,body {
 }
 
 html {
-  border: 30px solid white;
+  border: 20px solid white;
 }
 
 #topContainer {
@@ -17,6 +17,10 @@ html {
   padding-bottom: auto;
   // background-size: cover;
   // background-repeat: no-repeat;
+}
+
+.subtext {
+  color: lightslategray;
 }
 
 /* Top left text */
@@ -74,6 +78,18 @@ html {
   margin-bottom: 40px;
 }
 
+// .showAll {
+//   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+// }
+//
+// .showOdd {
+//   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+// }
+//
+// .showEven {
+//   box-shadow: 0 3px 0 -3px rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+// }
+
 .box1 {
   box-sizing: border-box;
   width: 200px;
@@ -89,7 +105,6 @@ html {
   justify-content: center;
   align-items: center;
   color: silver;
-
 }
 
 .box2  {
@@ -177,6 +192,10 @@ html {
   color: silver;
 }
 
+.all {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
 .all:hover {
   border-top: 2px solid red;
   cursor: pointer;
@@ -200,6 +219,7 @@ html {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+
 }
 
 .btn-group button {
@@ -227,6 +247,7 @@ html {
   background-color: blanchedalmond;
   color: dimgray;
   cursor: pointer;
+  display: absolute;
 
 }
 
@@ -243,4 +264,23 @@ html {
   color: dimgray;
   cursor: pointer;
   outline: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  // large tablet, large desktop
+
+}
+
+@media(max-width: 1015px) {
+  // tablet, small desktop
+  .centered {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  // phones
+  .centered {
+    display: none;
+  }
 }

@@ -4,7 +4,7 @@ html, body {
   background-color: whitesmoke; }
 
 html {
-  border: 30px solid white; }
+  border: 20px solid white; }
 
 #topContainer {
   width: auto;
@@ -13,6 +13,9 @@ html {
   text-align: center;
   color: white;
   padding-bottom: auto; }
+
+.subtext {
+  color: lightslategray; }
 
 /* Top left text */
 .top-left {
@@ -152,6 +155,9 @@ html {
   align-items: center;
   color: silver; }
 
+.all {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.1); }
+
 .all:hover {
   border-top: 2px solid red;
   cursor: pointer; }
@@ -199,7 +205,8 @@ html {
 .btn-group button:hover {
   background-color: blanchedalmond;
   color: dimgray;
-  cursor: pointer; }
+  cursor: pointer;
+  display: absolute; }
 
 .view {
   display: none;
@@ -213,5 +220,12 @@ html {
   color: dimgray;
   cursor: pointer;
   outline: 0; }
+
+@media (max-width: 1015px) {
+  .centered {
+    display: none; } }
+@media (max-width: 600px) {
+  .centered {
+    display: none; } }
 
 /*# sourceMappingURL=index.css.map */

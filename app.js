@@ -5,7 +5,7 @@ $(function(){
          $('.all').show();
          // console.log('SHOWALL')
     });
-    
+
     $('.showEven').on('click', function(event) {
          $('.even').show();
          $('.odd').hide();
