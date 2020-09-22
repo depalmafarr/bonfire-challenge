@@ -1,21 +1,19 @@
 'use strict'
 
-jQuery(document).ready(function(){
-    jQuery('#showAll').live('click', function(event) {
-         jQuery('#all').toggle('show');
+$(function(){
+    $('.showAll').on('click', function(event) {
+         $('.all').show();
+         // console.log('SHOWALL')
     });
-});
+    
+    $('.showEven').on('click', function(event) {
+         $('.even').show();
+         $('.odd').hide();
+    });
 
-jQuery(document).ready(function(){
-    jQuery('#showEven').live('click', function(event) {
-         jQuery('#even').toggle('show');
-         jQuery('#odd').toggle('hide');
+    $('.showOdd').on('click', function(event) {
+         $('.odd').show();
+         $('.even').hide();
     });
-});
 
-jQuery(document).ready(function(){
-    jQuery('#showOdd').live('click', function(event) {
-         jQuery('#odd').toggle('show');
-         jQuery('#even').toggle('hide');
-    });
 });

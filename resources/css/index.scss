@@ -1,7 +1,6 @@
 html,body {
     padding:0;
     margin:0;
-    height:100%;
     background-color: whitesmoke;
 }
 
@@ -48,6 +47,7 @@ html {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-bottom: 50px;
 }
 
 .hero {
@@ -71,6 +71,7 @@ html {
   text-align: center;
   align-items: center;
   margin: auto;
+  margin-bottom: 40px;
 }
 
 .box1 {
@@ -84,7 +85,7 @@ html {
 
 .box1 h3 {
   display: flex;
-  margin-top: 55px;
+  margin-top: 45px;
   justify-content: center;
   align-items: center;
   color: silver;
@@ -102,7 +103,7 @@ html {
 
 .box2 h3 {
   display: flex;
-  margin-top: 55px;
+  margin-top: 45px;
   justify-content: center;
   align-items: center;
   color: silver;
@@ -119,11 +120,10 @@ html {
 
 .box3 h3 {
   display: flex;
-  margin-top: 55px;
+  margin-top: 45px;
   justify-content: center;
   align-items: center;
   color: silver;
-
 }
 
 .box4 {
@@ -137,7 +137,7 @@ html {
 
 .box4 h3 {
   display: flex;
-  margin-top: 55px;
+  margin-top: 45px;
   justify-content: center;
   align-items: center;
   color: silver;
@@ -154,7 +154,7 @@ html {
 
 .box5 h3 {
   display: flex;
-  margin-top: 55px;
+  margin-top: 45px;
   justify-content: center;
   align-items: center;
   color: silver;
@@ -171,10 +171,27 @@ html {
 
 .box6 h3 {
   display: flex;
-  margin-top: 55px;
+  margin-top: 45px;
   justify-content: center;
   align-items: center;
   color: silver;
+}
+
+.all:hover {
+  border-top: 2px solid red;
+  cursor: pointer;
+}
+
+.all:hover > h3 {
+  color: tan;
+}
+
+.all:hover > .view {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 
 .btn-group {
@@ -207,5 +224,23 @@ html {
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: #1fbaed;
+  background-color: blanchedalmond;
+  color: dimgray;
+  cursor: pointer;
+
+}
+
+.view {
+  display: none;
+  border: none;
+  background: dimgray;
+  color: white;
+  padding: 13px 25px;
+}
+
+.show:focus {
+  background-color: blanchedalmond;
+  color: dimgray;
+  cursor: pointer;
+  outline: 0;
 }
