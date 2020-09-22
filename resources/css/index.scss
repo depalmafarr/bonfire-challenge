@@ -350,3 +350,30 @@ nav {
   }
 
 }
+
+@media(max-width: 420px) {
+  // small phones
+
+  // change amount of boxes in rows
+  #lowerContainer {
+    // make these smaller?
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  nav {
+    .home {
+      margin-right: 10px;
+    }
+
+    .away {
+      margin-right: 15px;
+    }
+  }
+}
