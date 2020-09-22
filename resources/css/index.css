@@ -14,8 +14,29 @@ html {
   color: white;
   padding-bottom: auto; }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  /* no underline */ }
+
 .subtext {
   color: lightslategray; }
+
+.top-left {
+  margin-top: 25px;
+  margin-left: 30px; }
+
+nav {
+  margin-top: 25px; }
+
+.home {
+  margin-right: 30px; }
+
+.home:visited {
+  color: blanchedalmond; }
+
+.away {
+  margin-right: 25px; }
 
 /* Top left text */
 .top-left {
@@ -58,7 +79,7 @@ html {
 #lowerContainer {
   display: grid;
   justify-content: center;
-  grid-gap: 2rem;
+  grid-gap: 1.5rem;
   grid-template-columns: 200px 200px 200px;
   text-align: center;
   align-items: center;
@@ -179,21 +200,17 @@ html {
 
 .btn-group button {
   background-color: dimgray;
-  /* Green background */
+  /* background */
   border: 0px solid black;
-  /* Green border */
+  /* take out border */
   color: white;
-  /* White text */
+  /* text */
   padding: 18px 24px;
   /* Some padding */
   cursor: pointer;
   /* Pointer/hand icon */
   float: left;
   /* Float the buttons side by side */ }
-
-.btn-group button:not(:last-child) {
-  border-right: none;
-  /* Prevent double borders */ }
 
 /* Clear floats (clearfix hack) */
 .btn-group:after {
@@ -221,11 +238,49 @@ html {
   cursor: pointer;
   outline: 0; }
 
-@media (max-width: 1015px) {
+@media (max-width: 771px) {
   .centered {
-    display: none; } }
+    display: none; }
+
+  .btn-group button {
+    color: white;
+    /* text */
+    padding: 18px 24px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */ }
+
+  #lowerContainer {
+    grid-gap: .25rem;
+    grid-template-columns: repeat(auto-fill);
+    grid-template-rows: auto;
+    margin-bottom: 0px; }
+
+  html {
+    border: 0px; } }
 @media (max-width: 600px) {
   .centered {
-    display: none; } }
+    display: none; }
+
+  #lowerContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin: auto; }
+
+  .view {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer; }
+
+  .top-left {
+    color: black; } }
 
 /*# sourceMappingURL=index.css.map */
