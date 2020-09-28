@@ -1,6 +1,6 @@
 # Bonfire Challenge
 
-I was challenged to recreate a photoshop file using html and css.
+Recieved a challenge to recreate a photoshop file using html and css.
 
 
 # Bonfire Chellenge dev process
