@@ -1,9 +1,9 @@
-# Bonfire Challenge
+# Challenge
 
 Recieved a challenge to recreate a photoshop file using html and css.
 
 
-# Bonfire Chellenge dev process
+# Challenge dev process
 
 Goal was to make a site that was as similar looking to a photoshop file given using SCSS, HTML, and basic JS.
 
